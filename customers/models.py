@@ -4,9 +4,6 @@ class Customer(models.Model):
     name = models.CharField(max_length=200)
     industry = models.CharField(max_length=100)
 
-    def __str__(self):
-        return self.name
-
 
 # class Order(models.Model):
 #     customer = models.ForeignKey(Customer, related_name="orders", on_delete=models.CASCADE)
